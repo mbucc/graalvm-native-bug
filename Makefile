@@ -13,6 +13,7 @@ testapp: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
 
 .PHONY: nobug
 nobug: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
+	@java -version 2>&1
 	java -p mlib -m com.example.service
 
 mlib/com.example.service@1.jar: compile
