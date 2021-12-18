@@ -8,5 +8,4 @@ public class MyProvider implements MyService {
   public void foo() {
     System.out.println("hello from MyProvider");
   }
-
 }
