@@ -1,10 +1,11 @@
 package com.example.provider;
 
-import com.example.service.MyBaseService;
+import com.example.service.MyService;
 
-public class MyProvider extends MyBaseService {
+public class MyProvider implements MyService {
 
-  public void bar() {
+  @Override
+  public void foo() {
     System.out.println("hello from MyProvider");
   }
 
