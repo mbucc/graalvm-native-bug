@@ -4,12 +4,16 @@ showbug: testapp
 
 testapp: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
 	native-image \
-	-cp "mlib/*" \
+	-cp "mlib/com.example.service@1.jar:mlib/com.example.provider@1.jar" \
 	--native-image-info \
 	--verbose \
 	--install-exit-handlers \
 	com.example.service.Service \
 	testapp
+
+.PHONY: nobug
+nobug: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
+	java -p mlib -m com.example.service
 
 mlib/com.example.service@1.jar: compile
 	mkdir -p mlib
