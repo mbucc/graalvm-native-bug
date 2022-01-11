@@ -14,5 +14,6 @@ public class Service {
       System.err.println("no providers found");
       System.exit(1);
     }
+    System.out.println("Success!");
   }
 }
