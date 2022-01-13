@@ -4,12 +4,12 @@ showbug: testapp
 
 testapp: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
 	native-image \
-	--module-path "mlib/com.example.service@1.jar:mlib/com.example.provider@1.jar" \
-	--module com.example.service \
-	--native-image-info \
-	--verbose \
-	--install-exit-handlers \
-	testapp
+		--module-path "mlib/com.example.service@1.jar:mlib/com.example.provider@1.jar" \
+		--module com.example.service \
+		--native-image-info \
+		--verbose \
+		--install-exit-handlers \
+		testapp
 
 .PHONY: nobug
 nobug: mlib/com.example.service@1.jar mlib/com.example.provider@1.jar
