@@ -35,7 +35,7 @@ Success!
 ```
 
 The two key commits were:
-* 7205c7984039e76701e52c8448c39c3d7f759e04, and
-* 3a0e410b80efe13a4926af8223c174a3f7d28701
+* https://github.com/mbucc/graalvm-native-service-provider-example/commit/7205c7984039e76701e52c8448c39c3d7f759e04, and
+* https://github.com/mbucc/graalvm-native-service-provider-example/commit/3a0e410b80efe13a4926af8223c174a3f7d28701
 
 See https://github.com/oracle/graal/issues/4141 for more details.
